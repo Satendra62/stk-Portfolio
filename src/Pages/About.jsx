@@ -3,6 +3,7 @@ import Myprofile from '../assets/AboutProfile.png'; // Update with your correct 
 
 const About = () => {
   return (
+    <div id='About'>
     <section className="flex flex-col md:flex-row items-center justify-center px-8 py-20 bg-white font-[Poppins]">
       {/* Image Section */}
       <div className="relative mb-10 md:mb-0 md:mr-10">
@@ -28,11 +29,11 @@ const About = () => {
         </h2>
 
         <p className="text-gray-700 text-lg mb-4">
-          Hello! I'm <strong>Satendra Kumar</strong>, a passionate Full Stack Developer and BCA student. I enjoy building real-world projects using <span className="text-orange-500">Java</span> and <span className="text-orange-500">C#</span>, while exploring the entire web development stack.
+          Hello! I'm <strong>Satendra Kumar</strong>, a passionate Full Stack Developer and BCA student. I love building real-world projects using <span className="text-orange-500">Java</span> and <span className="text-orange-500">C#</span>, while exploring the entire web development stack.
         </p>
 
         <p className="text-gray-700 text-base mb-6">
-          I love transforming ideas into clean, user-friendly experiences. From front-end design to back-end logic, I'm always curious to learn more and build impactful digital solutions.
+          I love transforming ideas into clean and user-friendly experiences. From front-end design to back-end logic, I'm always curious to learn more and build impactful digital solutions.
         </p>
 
         <div className="flex items-center justify-center md:justify-start gap-4">
@@ -42,7 +43,9 @@ const About = () => {
         </div>
       </div>
     </section>
+    </div>
   );
+  
 };
 
 export default About;

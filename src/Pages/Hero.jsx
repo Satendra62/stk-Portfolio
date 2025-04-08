@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import { FaLinkedin, FaXTwitter, FaSquareInstagram, FaSquareGithub} from "react-icons/fa6";
 import Myprofile from '../assets/MyProfile1.png';
 
+
 const Hero = () => {
   const texts = ["Satendra","Programmer"];
     const [displayText, setDisplayText] = useState("");
@@ -34,7 +35,8 @@ const Hero = () => {
       return () => clearInterval(interval);
     }, [charIndex, isForward, textIndex]);
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-16 bg-white dark:bg-gray-900 overflow-hidden overflow-y-auto">
+    <div id='hero'>
+    <section className="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-30 bg-white dark:bg-gray-900 overflow-hidden overflow-y-auto">
       {/* Left Content */}
       <div className="flex-1 space-y-6 text-center md:text-left">
         <p className="text-lg font-semibold text-gray-800 dark:text-gray-300">Hi I am</p>
@@ -44,7 +46,7 @@ const Hero = () => {
         </h1>
         <p className="text-gray-600 dark:text-gray-300 text-base max-w-xl mx-auto md:mx-0">
         
-        I'm a passionate web developer and BCA student focused on mastering full stack development with Java and C#. I enjoy creating impactful, user-friendly digital solutions.
+        I'm a passionate web developer and BCA student focused on mastering full stack development with Java and C#. I love creating impactful, user-friendly digital solutions.
 
 
         </p>
@@ -80,6 +82,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

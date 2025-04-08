@@ -30,6 +30,7 @@ const Projects = () => {
       : projects.filter((project) => project.category === activeCategory);
 
   return (
+    <div id="Project">
     <section className="py-16 px-6 md:px-20 bg-white dark:bg-gray-900 text-center">
       {/* Header */}
       <h2 className="text-4xl font-bold text-black dark:text-white mb-4">My Projects</h2>
@@ -75,6 +76,7 @@ const Projects = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 

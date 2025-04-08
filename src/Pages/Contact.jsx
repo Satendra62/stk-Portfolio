@@ -18,6 +18,7 @@ const Contact = () => {
   };
 
   return (
+    <div id='Contact'>
     <section className="py-10 px-6 max-w-4xl mx-auto">
       <h2 className="text-4xl font-bold text-center mb-8">
         Contact <span className="text-orange-500">Me!</span>
@@ -73,6 +74,7 @@ const Contact = () => {
         </div>
       </form>
     </section>
+    </div>
   );
 };
 
