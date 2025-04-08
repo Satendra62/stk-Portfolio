@@ -19,7 +19,7 @@ const projects = [
   },
 ];
 
-const categories = ["All", "UI/UX", "Web Design", "App Design", "Graphic Design"];
+const categories = ["All", "UI/UX", "Web Design", "Windows Form"];
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");

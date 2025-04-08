@@ -4,7 +4,7 @@ import Myprofile from '../assets/AboutProfile.png'; // Update with your correct 
 const About = () => {
   return (
     <div id='About'>
-    <section className="flex flex-col md:flex-row items-center justify-center px-8 py-20 bg-white font-[Poppins]">
+    <section className="flex flex-col md:flex-row items-center justify-center px-8 py-20 bg-white font-[Poppins] z-0">
       {/* Image Section */}
       <div className="relative mb-10 md:mb-0 md:mr-10">
         <img
