@@ -7,6 +7,10 @@ const Contact = () => {
   const captchaRef = useRef(null);
   const [captchaToken, setCaptchaToken] = useState(null);
 
+  const serviceKey = import.meta.env.VITE_APP_SERVICE_KEY
+  const tempelateKey = import.meta.env.VITE_APP_TEMPLATE_KEY
+  const publicProductKey = import.meta.env.VITE_APP_PUBLIC_PRODUCT_KEY
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -17,10 +21,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_idl4ex8',    
-        'template_1kcs9lj',   
+        serviceKey,
+        tempelateKey,
         formRef.current,
-        'IKJhH75ZYT11999VQ'     
+        publicProductKey
       )
       .then(
         (result) => {
@@ -86,7 +90,7 @@ const Contact = () => {
 
           <div className="flex justify-center">
             <HCaptcha
-              sitekey="10000000-ffff-ffff-ffff-000000000001" 
+              sitekey="10000000-ffff-ffff-ffff-000000000001"
               onVerify={(token) => setCaptchaToken(token)}
               ref={captchaRef}
             />
@@ -95,7 +99,7 @@ const Contact = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow hover:bg-orange-600 transition"
+              className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow hover:bg-orange-600 transition cursor-pointer"
             >
               Send Message
             </button>

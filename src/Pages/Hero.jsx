@@ -61,7 +61,7 @@ const Hero = () => {
 
 
           </p>
-          <button className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 transition " onClick={() => smoothScroll()}>
+          <button className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 transition cursor-pointer" onClick={() => smoothScroll()}>
             Hire Me
           </button>
 

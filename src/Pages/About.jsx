@@ -15,7 +15,7 @@ const About = () => {
   }
   return (
     <div id='About'>
-      <section className="flex flex-col md:flex-row items-center justify-center px-8 py-20 bg-white font-[Poppins] z-0">
+      <section className="flex flex-col md:flex-row items-center justify-center px-8 py-10 pb-20 bg-white font-[Poppins] z-0">
         {/* Image Section */}
         <div className="relative mb-10 md:mb-0 md:mr-10">
           <img
@@ -48,7 +48,7 @@ const About = () => {
           </p>
 
           <div className="flex items-center justify-center md:justify-start gap-4">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md shadow-md transition duration-300" onClick={() => smoothScroll()}>
+            <button className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md shadow-md transition duration-300 cursor-pointer" onClick={() => smoothScroll()}>
               Know More
             </button>
           </div>

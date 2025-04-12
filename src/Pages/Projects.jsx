@@ -1,21 +1,22 @@
 import React, { useState } from "react";
+import ReactProject from "../assets/ReactProject1.png"
 
 
 const projects = [
   {
     title: "React Based Projects (Development)",
     category: "Web Design",
-    image: "/assets/project1.png",
+    image: `${ReactProject}`,
   },
   {
     title: "Business Landing Page Design (Development)",
     category: "Web Design",
-    image: "/assets/project2.png",
+    image: "/assets/ReactProject1.png",
   },
   {
     title: "A clean eCommerce layout showcasing product sections and CTAs. (Development)",
     category: "Web Design",
-    image: "/assets/project3.png",
+    image: "/assets/ReactProject1.png",
   },
 ];
 
@@ -31,7 +32,7 @@ const Projects = () => {
 
   return (
     <div id="Project">
-      <section className="py-16 px-6 md:px-20 bg-white dark:bg-gray-900 text-center">
+      <section className="py-16 pt-25 px-6 md:px-20 bg-white dark:bg-gray-900 text-center">
         {/* Header */}
         <h2 className="text-4xl font-bold text-black dark:text-white mb-4">My Projects</h2>
         <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
@@ -46,7 +47,7 @@ const Projects = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-full border dark:border-gray-600 transition ${activeCategory === cat
                   ? "bg-orange-500 text-white"
-                  : "bg-white dark:bg-gray-800 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                  : "bg-white dark:bg-gray-800 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 cursor-pointer"
                 }`}
             >
               {cat}
