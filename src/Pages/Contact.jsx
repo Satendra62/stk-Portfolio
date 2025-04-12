@@ -10,6 +10,7 @@ const Contact = () => {
   const serviceKey = import.meta.env.VITE_APP_SERVICE_KEY
   const tempelateKey = import.meta.env.VITE_APP_TEMPLATE_KEY
   const publicProductKey = import.meta.env.VITE_APP_PUBLIC_PRODUCT_KEY
+  const siteKey = import.meta.env.VITE_APP_SITE_KEY
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -90,7 +91,7 @@ const Contact = () => {
 
           <div className="flex justify-center">
             <HCaptcha
-              sitekey="10000000-ffff-ffff-ffff-000000000001"
+              sitekey={siteKey}
               onVerify={(token) => setCaptchaToken(token)}
               ref={captchaRef}
             />
