@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* CV Button */}
         <button className="hidden md:block bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600 transition">
-          MY CV
+          <a href="https://drive.google.com/file/d/1BwWNUm8uoGfyk5-bbKbEHWuZfXEzpnp1/view?usp=drive_link">MY CV</a>
         </button>
       </span>
 
