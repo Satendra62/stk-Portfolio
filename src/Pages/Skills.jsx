@@ -1,8 +1,8 @@
 import React from 'react';
 
 const skills = [
-  "Java","C#", "HTML", "CSS", "Tailwind", "Js",
-  "React.Js", "Database",
+  "HTML","CSS", "Tailwind", "JavaScript","React","Java","C#",  
+   "Database",
   "Communication", "Git", "Github", "canva",
 ];
 
@@ -13,11 +13,11 @@ const Skills = () => {
         My<span className="text-orange-500">Skills</span>
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-4 transform -rotate-6">
+      <div className="flex flex-wrap justify-center gap-4 ">
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="bg-orange-500 text-white px-4 py-2 rounded-lg shadow-md rotate-6 text-sm md:text-base transition-transform duration-500 hover:rotate-90 cursor-pointer"
+            className="bg-orange-500 text-white px-4 py-2 rounded-lg shadow-md  text-sm md:text-base transition-transform duration-500 hover:-rotate-30 cursor-pointer"
           >
             {skill}
           </span>
