@@ -1,22 +1,24 @@
 import React, { useState } from "react";
 import ReactProject from "../assets/ReactProject1.png"
+import ReactProject2 from "../assets/ReactProject2.png"
+import ReactProject3 from "../assets/ReactProject3.png"
 
 
 const projects = [
   {
-    title: "React Based Projects (Development)",
+    title: "React Based Task Manager Application",
     category: "Web Design",
     image: `${ReactProject}`,
   },
   {
-    title: "Business Landing Page Design (Development)",
+    title: "A Counter Application",
     category: "Web Design",
-    image: "/assets/ReactProject1.png",
+    image: `${ReactProject2}`,
   },
   {
-    title: "A clean eCommerce layout showcasing product sections and CTAs. (Development)",
+    title: `A clean eCommerce layout showcasing product sections and CTAs.${<br></br>}(Under-Development)`,
     category: "Web Design",
-    image: "/assets/ReactProject1.png",
+    image: `${ReactProject3}`,
   },
 ];
 

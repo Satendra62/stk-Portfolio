@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import MySign from '../assets/satendra-logo.svg';
+import MySign from '../assets/MySign.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
